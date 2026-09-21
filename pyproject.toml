@@ -4,8 +4,6 @@ version = "0.1"
 description = "Inference/Network/Model code for Apple Depth Pro monocular depth estimation."
 readme = "README.md"
 dependencies = [
-    "torch",
-    "torchvision",
     "timm",
     "numpy<2",
     "pillow_heif",
@@ -32,7 +30,7 @@ exclude = [
     "**/node_modules",
     "**/__pycache__",
 ]
-pythonVersion = "3.9"
+pythonVersion = "3.8"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
@@ -56,4 +54,4 @@ extend-exclude = [
     "third_party",
 ]
 src = ["depth_pro", "tests"]
-target-version = "py39"
+target-version = "py38"
