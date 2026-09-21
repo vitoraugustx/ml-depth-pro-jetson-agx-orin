@@ -13,8 +13,8 @@ from tqdm import tqdm
 
 LOGGER = logging.getLogger(__name__)
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".heic", ".webp"}
-DEFAULT_OUTPUT_DIR = Path("assets/output")
-DEFAULT_INPUT_DIR = Path("assets/datasets/validation_road_obstacle_21")
+DEFAULT_OUTPUT_DIR = Path("data/output")
+DEFAULT_INPUT_DIR = Path("data/datasets/validation_road_obstacle_21")
 
 
 def get_torch_device() -> torch.device:
